@@ -10,14 +10,19 @@ function App() {
   return (
      <Provider store={store}>
       <div className="d-flex justify-content-center align-items-center vh-100">
-        <div className="container myp-10 rounded-pill">
+        <div className="container myp-10">
           <div className="row auto justify-content-md-center">
             <div className="col">
-              <p id="text" className="lead" style={{ wordWrap: 'break-word' }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, vero iusto et sequi nulla, iuredawd, awdapw hawjd wdjahk d aw jwahd.
-              </p>
+              <div className="d-flex align-items-start">
+                <p id="quote-text" className="lead" style={{  fontSize: '30px', wordWrap: 'break-word'}}>
+                <i id="quote-icon"className="fas fa-quote-left fa-1x text-primary" style={{ marginRight: '0.8rem' }}></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, vero iusto et sequi nulla, iuredawd, awdapw hawjd wdjahk d aw jwahd.
+                </p>
+              </div>
             </div>
           </div>
+
+
           <div class="row">
             <div class="col text-end">
               <p id="author">Sam Smith</p>

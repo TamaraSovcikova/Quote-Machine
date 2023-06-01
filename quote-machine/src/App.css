@@ -1,18 +1,47 @@
 
 :root{
   --containerColour: rgb(197, 191, 191);
+  --backgroundColour: rgb(115, 137, 199);
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
+  background-color: var(--backgroundColour) !important;
+  color: var(--backgroundColour) !important;
+ }
+
 .container {
   background-color: var(--containerColour);  
-  max-width: 900px !important;
+  max-width: 700px !important;
+  border-radius: 40px;
 }
+
 .myp-10 {
-  padding: 50px 90px !important;
+  padding: 40px 70px !important;
   box-sizing: border-box;
+}
+#quote-text {
+  font-family: 'PTSansNarrow Bold';
+}
+#author {
+  font-family: 'PTSansNarrow Regular';
+}
+#quote-icon {
+  color: var(--backgroundColour) !important;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('./fonts/Dancing_Script/static/DancingScript-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PTSansNarrow Bold';
+  src: url('./fonts/PT_Sans_Narrow/PTSansNarrow-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PTSansNarrow Regular';
+  src: url('./fonts/PT_Sans_Narrow/PTSansNarrow-Regular.ttf') format('truetype');
 }
