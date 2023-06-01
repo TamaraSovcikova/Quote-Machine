@@ -8,20 +8,21 @@ import { useState } from 'react';
 
 
 function App({quotes, changeQuote}) {
-  const [fadeOut, setFadeOut] = useState(false);
   const [fadeIn, setFadeIn] = useState(false);
   const currentQuote = quotes.currentQuote;
 
-  const handleNewQuote = () => {
-    setFadeOut(true);
+ const handleNewQuote = () => {
+    setFadeIn(false);
     setTimeout(() => {
       changeQuote();
-      setFadeOut(false);
       setFadeIn(true);
-      setTimeout(() => {
-        setFadeIn(false);
-      }, 500);
+      setRandomBackgroundColor();
     }, 500);
+  };
+
+  const setRandomBackgroundColor = () => {
+    const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    document.documentElement.style.setProperty('--backgroundColour', randomColor);
   };
 
   return (
@@ -46,10 +47,10 @@ function App({quotes, changeQuote}) {
           <div className="row">
             <div className="col">
                <div id="social-icons" className="flex justify-content-start">
-                <a id="instagram-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="custom-anchor btn">
+                <a id="instagram-link" href="https://www.instagram.com/0_snaccident_0/" target="_blank" rel="noopener noreferrer" className="custom-anchor btn">
                   <i className="fab fa-instagram fa-lg text-white"></i> 
                 </a>
-                <a id="github-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" className="custom-anchor btn">
+                <a id="github-link" href="https://github.com/TamaraSovcikova" target="_blank" rel="noopener noreferrer" className="custom-anchor btn">
                   <i className="fab fa-github fa-lg text-white"></i> 
                 </a>
               </div>
