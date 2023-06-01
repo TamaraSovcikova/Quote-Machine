@@ -1,5 +1,6 @@
 import { createStore } from 'redux';
 
+
 const initialState = {
     quotes: [
         {text: 'blurb', author: '1'},
