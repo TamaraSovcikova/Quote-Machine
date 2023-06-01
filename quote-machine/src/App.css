@@ -31,15 +31,10 @@ body {
 }
 
 #quote-text {
-  font-family: 'PTSansNarrow Bold' !important;
-  color: var(--backgroundColour) !important;
+  font-family: 'PTSansNarrow Bold' !important; 
 }
 
-#author {  
-  color: var(--backgroundColour) !important;
-}
-
-#quote-icon {
+#author, #quote-icon, #quote-text{  
   color: var(--backgroundColour) !important;
 }
 
