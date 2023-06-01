@@ -34,7 +34,7 @@ function App({quotes, changeQuote}) {
               <div className={`container myp-10 ${fadeIn ? 'fade-in' : ''}`}>
                 <p id="quote-text" className={`lead ${fadeIn ? 'fade-in' : ''}`} style={{  fontSize: '30px', wordWrap: 'break-word'}}>
                 <i id="quote-icon"className="fas fa-quote-left fa-1x text-primary" style={{ marginRight: '0.8rem' }}></i>
-                  {currentQuote ? currentQuote.text : 'Press The button To Generate A Quote'}
+                  {currentQuote ? currentQuote.text : 'Welcome, Press The Button To Generate Quote'}
                 </p>
               </div>
             </div>
