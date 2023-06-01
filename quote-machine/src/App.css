@@ -1,20 +1,23 @@
-
-:root{
-  --containerColour: rgb(197, 191, 191);
+:root {
+  --containerColour: rgb(255, 255, 255);
   --backgroundColour: rgb(115, 137, 199);
+}
+html{
+  height:100%;
 }
 
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: var(--backgroundColour) !important;
-  color: var(--backgroundColour) !important;
- }
+  align-items: center;  
+  background-color: var(--backgroundColour) !important; 
+  height: 100%; 
+  font-family: 'PTSansNarrow Regular';
+  color: white;
+}
 
 .container {
-  background-color: var(--containerColour);  
+  background-color: var(--containerColour);
   max-width: 700px !important;
   border-radius: 40px;
 }
@@ -23,24 +26,45 @@ body {
   padding: 40px 70px !important;
   box-sizing: border-box;
 }
+
 #quote-text {
-  font-family: 'PTSansNarrow Bold';
+  font-family: 'PTSansNarrow Bold' !important;
+  color: var(--backgroundColour) !important;
 }
-#author {
-  font-family: 'PTSansNarrow Regular';
+
+#author {  
+  color: var(--backgroundColour) !important;
 }
+
 #quote-icon {
   color: var(--backgroundColour) !important;
 }
+
+.custom-button {
+  background-color: var(--backgroundColour) !important;
+  color:white !important;
+}
+
+.custom-button:hover, .custom-anchor:hover {
+  filter: brightness(120%);
+}
+
+.custom-anchor {
+  background-color: var(--backgroundColour) !important;
+  margin-right: 8px;
+}
+
 
 @font-face {
   font-family: 'Dancing Script';
   src: url('./fonts/Dancing_Script/static/DancingScript-Medium.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'PTSansNarrow Bold';
   src: url('./fonts/PT_Sans_Narrow/PTSansNarrow-Bold.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'PTSansNarrow Regular';
   src: url('./fonts/PT_Sans_Narrow/PTSansNarrow-Regular.ttf') format('truetype');
