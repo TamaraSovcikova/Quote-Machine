@@ -19,11 +19,13 @@ body {
 .container {
   background-color: var(--containerColour);
   max-width: 700px !important;
+  width: 100%;
   border-radius: 40px;
+  margin: 0 auto;
 }
 
 .myp-10 {
-  padding: 40px 70px !important;
+  padding: 30px 40px !important;
   box-sizing: border-box;
 }
 
@@ -68,4 +70,36 @@ body {
 @font-face {
   font-family: 'PTSansNarrow Regular';
   src: url('./fonts/PT_Sans_Narrow/PTSansNarrow-Regular.ttf') format('truetype');
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease-in;
+}
+
+.fade-out {
+  animation: fade-out 0.5s ease-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
 }
