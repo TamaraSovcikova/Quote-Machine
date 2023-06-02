@@ -28,11 +28,11 @@ function App({quotes, changeQuote}) {
   return (
      <Provider store={store}>
       <div className= "d-flex justify-content-center align-items-center">
-        <div className="container myp-10">
+        <div id='quote-box' className="container myp-10">
           <div className="row auto justify-content-md-center">
             <div className="col">
               <div className={`container myp-10 ${fadeIn ? 'fade-in' : ''}`}>
-                <p id="quote-text" className={`lead ${fadeIn ? 'fade-in' : ''}`} style={{  fontSize: '30px', wordWrap: 'break-word'}}>
+                <p id="text" className={`lead ${fadeIn ? 'fade-in' : ''}`} style={{  fontSize: '30px', wordWrap: 'break-word'}}>
                 <i id="quote-icon"className="fas fa-quote-left fa-1x text-primary" style={{ marginRight: '0.8rem' }}></i>
                   {currentQuote ? currentQuote.text : 'Welcome, Press The Button To Generate Quote'}
                 </p>
@@ -52,6 +52,9 @@ function App({quotes, changeQuote}) {
                 </a>
                 <a id="github-link" href="https://github.com/TamaraSovcikova" target="_blank" rel="noopener noreferrer" className="custom-anchor btn">
                   <i className="fab fa-github fa-lg text-white"></i> 
+                </a>
+                <a id="tweet-quote" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer" className="custom-anchor btn">
+                  <i className="fab fa-twitter fa-lg text-white"></i> 
                 </a>
               </div>
             </div>

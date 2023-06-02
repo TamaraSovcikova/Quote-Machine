@@ -30,11 +30,11 @@ body {
   box-sizing: border-box;
 }
 
-#quote-text {
+#text {
   font-family: 'PTSansNarrow Bold' !important; 
 }
 
-#author, #quote-icon, #quote-text{  
+#author, #quote-icon, #text{  
   color: var(--backgroundColour) !important;
 }
 
